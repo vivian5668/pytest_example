@@ -1,7 +1,8 @@
-import math_func
 
-def test_add():
-    assert math_func.add(7, 3) == 10
+def add(a, b):
+    if not a.isdigit() or not b.isdigit():
+        raise ValueError("Not a number")
+    return a + b
 
-def test_minus():
-    assert math_func.minus(7, 3) == 4
+def minus(a, b):
+    return a - b
